@@ -16,6 +16,10 @@ particular language Wikipedia by inserting the template variable
 applies to research results, and show some examples of dynamic documents used
 in this way.
 
+# LIGO Open Science Center
+
+https://losc.ligo.org/events/GW150914/
+
 # Wikipedia
 
 - mediawiki syntax
