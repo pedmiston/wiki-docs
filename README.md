@@ -15,11 +15,3 @@ particular language Wikipedia by inserting the template variable
 `{{NUMBEROFARTICLES}}`.  I'll expand upon the idea of template variables as it
 applies to research results, and show some examples of dynamic documents used
 in this way.
-
-# Wikipedia
-
-- mediawiki syntax
-- templates
-- transclusion
-- {{NUMBEROFARTICLES}}
-- {{NUMBEROF|ARTICLES|total}}
