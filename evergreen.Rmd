@@ -1,28 +1,19 @@
 ---
-title: The impact of inheritance on problem solving ability
-author: Pierce Edmiston
+title: "The impact of inheritance on problem solving ability"
+author: "Pierce Edmiston"
+output:
+  html_document: default
+  pdf_document: default
 ---
-
-`r source("load.R")`
+`r source("load_article_stats.R")`
 
 On November 1, 2015, the English Wikipedia published its 5 millionth article.
 The article, on a shrub native to eastern Australia, was only 9 words long.
-Since then, the article has been edited `r stats$n_edits` times by `r stats$n_authors` different authors,
-and now includes `r stats$n_sections` different sections on the taxonomy, habitat, and ecology
-of this Australian plant. The collaborative effort of writing a Wikipedia
-article exhibits a type of teamwork that is foundational to cumulative
-cultural evolution, and may be unique to our species [@Henrich:2015srt;
-@Dean:2013dp; @Tomasello:1993vh]. Humans are particularly adept at using
-and improving cultural products such as tools and other technology that
-were invented by other people. In the example of Wikipedia, independent editors
-are able to coordinate their labor so that articles can be written
-incrementally, each edit with the possibility of improving upon the last. I
-refer to this type of collaboration, where the products of labor such as a
-solution to some problem, are shared with or inherited by future generations of
-problem solvers, as **diachronic collaboration** (Fig. 1). The purpose of this
-research is to investigate why diachronic collaboration is crucial for
-cumulative cultural evolution by assessing its effectiveness as a problem
-solving strategy.
+Since then, the article has been edited `r stats$n_edits` times by
+`r stats$n_authors` different authors, and now includes `r stats$n_sections`
+different sections on the taxonomy, habitat, and ecology of this Australian
+plant.
 
-```{r diachronic-collaboration, engine="dot", fig.width=1, fig.pos="h", out.extra="", fig.cap="In diachronic collaboration, the products of one generation of labor are inherited by the next generation. An example of diachronic collaboration is Wikipedia article writing, where articles are effectively passed from editor to editor in a chain of edits. The ability to engage in diachronic collaboration---to improve something that was created by someone else---is required in order to observe the ratcheting of technological complexity in a culture."}
+```{r diachronic-collaboration, fig.align="center", fig.height=2, echo=FALSE, message=FALSE, warning=FALSE, results="hide"}
+crotchet::draw_graphviz("diachronic-collaboration", package = "totems")
 ```
