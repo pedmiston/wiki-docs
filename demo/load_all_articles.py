@@ -22,13 +22,14 @@ def get_article_stats(name):
     )
     return data
 
-articles = []
-for name in open(sys.argv[1]):
-    try:
-        data = get_article_stats(name)
-    except:
-        sys.stderr.write(f'Error in getting article "{name}"')
-    else:
-        articles.append(data)
+if __name__ == '__main__':
+    articles = []
+    for name in open(sys.argv[1]):
+        try:
+            data = get_article_stats(name)
+        except:
+            sys.stderr.write(f'Error in getting article "{name}"')
+        else:
+            articles.append(data)
 
-pandas.DataFrame(articles).to_csv(sys.stdout, index=False)
+    pandas.DataFrame(articles).to_csv(sys.stdout, index=False)

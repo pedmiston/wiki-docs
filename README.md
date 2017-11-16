@@ -18,9 +18,9 @@ in this way.
 
 # Outline
 
-1. [Wikipedia pages as dynamic documents](/wikipedia.md)
-2. [The mechanics of dynamic documents](/dynamic-documents.md)
-3. Examples of dynamic documents: [Jupyter notebooks](/jupyter-notebooks.md), [Rmarkdown documents](/evergreen.Rmd)
+1. [Wikipedia pages as dynamic documents](/1-wikipedia.md)
+2. [The mechanics of dynamic documents](/2-dynamic-documents.md)
+3. Examples of dynamic documents: [Jupyter notebooks](/3-jupyter-notebooks.md), [Rmarkdown documents](/demo/evergreen.Rmd)
 
 # Quick poll
 
