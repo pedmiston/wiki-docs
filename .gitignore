@@ -4,3 +4,5 @@ apicache/
 .Rhistory
 .RData
 .Ruserdata
+*.pdf
+*.html

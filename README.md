@@ -15,3 +15,18 @@ particular language Wikipedia by inserting the template variable
 `{{NUMBEROFARTICLES}}`.  I'll expand upon the idea of template variables as it
 applies to research results, and show some examples of dynamic documents used
 in this way.
+
+# Outline
+
+1. [Wikipedia pages as dynamic documents](/wikipedia.md)
+2. [The mechanics of dynamic documents](/dynamic-documents.md)
+3. Examples of dynamic documents: [Jupyter notebooks](/jupyter-notebooks.md), [Rmarkdown documents](/evergreen.Rmd)
+
+# Quick poll
+
+Have you ever:
+
+- Edited a Wikipedia page?
+- Written some python code in a Jupyter notebook?
+- Compiled an Rmarkdown document in RStudio?
+- Used pandoc to convert a markdown document to some other format?

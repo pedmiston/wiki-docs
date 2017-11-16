@@ -5,7 +5,10 @@ output:
   html_document: default
   pdf_document: default
 ---
-`r source("load_article_stats.R")`
+```{r config, include=FALSE}
+source("load_article_stats.R")
+stats <- load_article_stats("Persoonia_terminalis")
+```
 
 On November 1, 2015, the English Wikipedia published its 5 millionth article.
 The article, on a shrub native to eastern Australia, was only 9 words long.
@@ -14,6 +17,13 @@ Since then, the article has been edited `r stats$n_edits` times by
 different sections on the taxonomy, habitat, and ecology of this Australian
 plant.
 
-```{r diachronic-collaboration, fig.align="center", fig.height=2, echo=FALSE, message=FALSE, warning=FALSE, results="hide"}
-crotchet::draw_graphviz("diachronic-collaboration", package = "totems")
+```{r diachronic-collaboration, engine="dot", echo=FALSE}
+digraph {
+  label="Diachronic collaboration"
+  fontname=Helvetica;
+  rankdir=LR;
+  node[fontname=Helvetica shape=circle label=""];
+  g0 -> g1 -> g2 -> g3 -> g4 -> g5 -> g6 -> g7 -> gn;
+  gn[style=invis];  
+}
 ```
